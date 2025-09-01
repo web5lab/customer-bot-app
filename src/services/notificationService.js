@@ -5,12 +5,12 @@ import { getMessaging, getToken, onMessage } from 'firebase/messaging'
 
 // Firebase configuration - Replace with your config
 const firebaseConfig = {
-  apiKey: "your-api-key",
-  authDomain: "your-project.firebaseapp.com",
-  projectId: "your-project-id",
-  storageBucket: "your-project.appspot.com",
-  messagingSenderId: "your-sender-id",
-  appId: "your-app-id"
+  apiKey: "AIzaSyAuT8Sq8C3eBATne5HyaBc07NKyqWcHUNE",
+  authDomain: "yu-gi-no.firebaseapp.com",
+  projectId: "yu-gi-no",
+  storageBucket: "yu-gi-no.firebasestorage.app",
+  messagingSenderId: "433766135979",
+  appId: "1:433766135979:android:de5dc3c61ee6273b2c1fee"
 }
 
 // Initialize Firebase

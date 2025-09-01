@@ -8,10 +8,10 @@ app.use(express.json());
 app.use(cors());
 
 // Initialize Firebase Admin
-const serviceAccount = require('./path/to/serviceAccountKey.json');
+const serviceAccount = require('./serviceAccountKey.json');
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  projectId: 'your-project-id'
+  projectId: 'yu-gi-no'
 });
 
 // Mock database - replace with your actual database

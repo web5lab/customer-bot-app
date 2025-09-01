@@ -11,11 +11,13 @@ import {
   Sun,
   Globe,
   Save,
-  ArrowLeft
+  ArrowLeft,
+  Smartphone
 } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { userSelector } from '../store/selectors'
 import { setLogout } from '../store/slice'
+import { notificationService } from '../services/notificationService'
 
 const settingsGroups = [
   {
@@ -50,13 +52,37 @@ export function Settings() {
     email: false,
     marketing: false
   })
+  const [notificationToken, setNotificationToken] = useState('')
   const [appearance, setAppearance] = useState({
     theme: 'light',
     fontSize: 'medium'
   })
 
+  useEffect(() => {
+    // Get notification token for display
+    const token = notificationService.getToken()
+    if (token) {
+      setNotificationToken(token.substring(0, 20) + '...')
+    }
+  }, [])
+
   const handleLogout = () => {
     dispatch(setLogout())
+  }
+
+  const testNotification = async () => {
+    try {
+      // Test local notification
+      const event = new CustomEvent('foregroundNotification', {
+        detail: {
+          title: 'Test Notification',
+          body: 'This is a test notification from CustomerBot!'
+        }
+      })
+      window.dispatchEvent(event)
+    } catch (error) {
+      console.error('Error testing notification:', error)
+    }
   }
 
   const renderSectionContent = () => {
@@ -106,6 +132,28 @@ export function Settings() {
       case 'notifications':
         return (
           <div className="space-y-4">
+            {/* Notification Status */}
+            <div className="bg-gray-50 rounded-lg p-4">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                  <Smartphone className="w-5 h-5 text-green-600" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900">Device Registered</h4>
+                  <p className="text-sm text-gray-600">
+                    {notificationToken ? `Token: ${notificationToken}` : 'No token available'}
+                  </p>
+                </div>
+              </div>
+              <button
+                onClick={testNotification}
+                className="w-full py-2 px-4 bg-blue-500 text-white rounded-lg font-medium hover:bg-blue-600 transition-colors"
+              >
+                Test Notification
+              </button>
+            </div>
+
+            {/* Notification Settings */}
             {Object.entries(notifications).map(([key, value]) => (
               <div key={key} className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
                 <div>

@@ -5,6 +5,7 @@ import { BotProvider } from './contexts/BotContext'
 import { AuthProvider } from './contexts/AuthContext'
 import { ProtectedRoute } from './components/ProtectedRoute'
 import { BottomNavigation } from './components/BottomNavigation'
+import { NotificationHandler } from './components/NotificationHandler'
 import { GoogleAuth } from '@codetrix-studio/capacitor-google-auth';
 
 // Pages
@@ -48,6 +49,7 @@ function AppLayout() {
   
   return (
     <div className="h-screen flex flex-col bg-gray-50 dark:bg-gray-900 overflow-hidden">
+      <NotificationHandler />
       <main className="flex-1 overflow-hidden">
         <Routes>
           <Route path="/login" element={<Login />} />

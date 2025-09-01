@@ -1,5 +1,6 @@
 import { PushNotifications } from '@capacitor/push-notifications'
 import { Capacitor } from '@capacitor/core'
+import { Device } from '@capacitor/device'
 import { initializeApp } from 'firebase/app'
 import { getMessaging, getToken, onMessage } from 'firebase/messaging'
 
@@ -132,7 +133,6 @@ class NotificationService {
 
   async getDeviceId() {
     try {
-      const { Device } = await import('@capacitor/device')
       const info = await Device.getId()
       return info.identifier
     } catch (error) {

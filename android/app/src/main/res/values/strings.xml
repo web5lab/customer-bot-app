@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">customerbot-mobile-app</string>
+    <string name="title_activity_main">customerbot-mobile-app</string>
+    <string name="package_name">com.customerbot.in</string>
+    <string name="custom_url_scheme">com.customerbot.in</string>
+</resources>

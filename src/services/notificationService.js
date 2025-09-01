@@ -55,7 +55,7 @@ class NotificationService {
   async getWebToken() {
     try {
       const token = await getToken(messaging, {
-        vapidKey: 'your-vapid-key' // Replace with your VAPID key
+        vapidKey: 'BJK1V6M3TGW2Cc16n7gSA4EB1Nuq7xlROvAdvuaEETl33IIr8Git8YmVB5pUEGUEZtY7ulki4vJQszigKOe_2Bo'
       })
       
       if (token) {

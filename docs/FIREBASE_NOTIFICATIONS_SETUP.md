@@ -110,7 +110,7 @@ const firebaseConfig = {
 Also update the VAPID key:
 ```javascript
 const token = await getToken(messaging, {
-  vapidKey: 'YOUR_VAPID_KEY_HERE' // Replace with your VAPID key
+  vapidKey: 'BJK1V6M3TGW2Cc16n7gSA4EB1Nuq7xlROvAdvuaEETl33IIr8Git8YmVB5pUEGUEZtY7ulki4vJQszigKOe_2Bo'
 })
 ```
 

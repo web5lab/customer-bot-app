@@ -1,2 +1,6 @@
 node_modules
 dist
+
+# Firebase Service Account Keys (sensitive)
+serviceAccountKey.json
+server/serviceAccountKey.json

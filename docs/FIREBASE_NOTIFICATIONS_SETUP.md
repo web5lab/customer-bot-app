@@ -34,7 +34,7 @@ This guide will walk you through setting up Firebase Cloud Messaging (FCM) for p
 1. In your Firebase project dashboard, click **"Add app"**
 2. Select the **Android** icon
 3. Fill in the app details:
-   - **Android package name**: `com.customerbot.in` (must match exactly)
+   - **Android package name**: `com.customerbot.co` (must match exactly)
    - **App nickname**: `CustomerBot Mobile` (optional)
    - **Debug signing certificate SHA-1**: (optional for now)
 4. Click **"Register app"**
@@ -86,7 +86,7 @@ const firebaseConfig = {
 
 1. Take the `google-services.json` file you downloaded
 2. Replace the existing file at: `android/app/google-services.json`
-3. Make sure the package name in the file matches `com.customerbot.in`
+3. Make sure the package name in the file matches `com.customerbot.co`
 
 ### Step 2: Update JavaScript Configuration
 

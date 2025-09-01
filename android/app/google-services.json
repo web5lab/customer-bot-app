@@ -1,36 +1,26 @@
 {
   "project_info": {
-    "project_number": "your-project-number",
-    "project_id": "your-project-id",
-    "storage_bucket": "your-project.appspot.com"
+    "project_number": "433766135979",
+    "project_id": "yu-gi-no",
+    "storage_bucket": "yu-gi-no.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "your-app-id",
+        "mobilesdk_app_id": "1:433766135979:android:de5dc3c61ee6273b2c1fee",
         "android_client_info": {
-          "package_name": "com.customerbot.in"
+          "package_name": "com.customerbot.co"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "your-client-id",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "your-api-key"
+          "current_key": "AIzaSyAuT8Sq8C3eBATne5HyaBc07NKyqWcHUNE"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "your-web-client-id",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

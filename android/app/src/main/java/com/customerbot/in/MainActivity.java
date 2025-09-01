@@ -1,4 +1,4 @@
-package com.customerbot.in;
+package com.customerbot.co;
 
 import com.getcapacitor.BridgeActivity;
 

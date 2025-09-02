@@ -1,9 +1,8 @@
 import { ArrowLeft, Github } from 'lucide-react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { logedInSelector } from '../store/selectors'
 import { useEffect, useState } from 'react'
-import { GetUserData } from '../store/actions'
 
 const GoogleLogo = () => (
   <svg className="w-5 h-5 mr-3" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
@@ -18,7 +17,6 @@ export function Login() {
   const navigate = useNavigate()
   const logedIn = useSelector(logedInSelector)
   const [isLoading, setIsLoading] = useState(false)
-  const dispatch = useDispatch()
 
   useEffect(() => {
     if (logedIn) {
@@ -28,18 +26,12 @@ export function Login() {
 
   const handleGithubLogin = () => {
     setIsLoading(true)
-    localStorage.setItem('authToken', import.meta.env.VITE_JWT_LOGIN)
-    dispatch(GetUserData(import.meta.env.VITE_JWT_LOGIN))
-    navigate('/')
-    // window.location.href = `${import.meta.env.VITE_SERVER_URL}/auth/github`
+    window.location.href = `${import.meta.env.VITE_SERVER_URL}/auth/github`
   }
 
   const handleGoogleLogin = () => {
     setIsLoading(true)
-    localStorage.setItem('authToken', import.meta.env.VITE_JWT_LOGIN)
-    dispatch(GetUserData(import.meta.env.VITE_JWT_LOGIN))
-    navigate('/')
-    // window.location.href = `${import.meta.env.VITE_SERVER_URL}/auth/google`
+    window.location.href = `${import.meta.env.VITE_SERVER_URL}/auth/google`
   }
 
   return (

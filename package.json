@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@capacitor/android": "^7.4.3",
-    "@capacitor/core": "^7.4.3",
+    "@capacitor/core": "^8.4.1",
     "@capacitor/device": "^7.0.5",
     "@capacitor/ios": "^7.6.7",
     "@capacitor/push-notifications": "^7.0.2",

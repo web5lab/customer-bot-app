@@ -10,7 +10,7 @@ PODS:
   - CapacitorCordova (7.6.7)
   - CapacitorDevice (7.0.5):
     - Capacitor
-  - CapacitorPushNotifications (7.0.2):
+  - CapacitorPushNotifications (7.0.6):
     - Capacitor
   - CodetrixStudioCapacitorGoogleAuth (0.0.1):
     - Capacitor
@@ -55,7 +55,7 @@ SPEC CHECKSUMS:
   Capacitor: ee608ffbcf73b0030813d77ce8b10142f26cad4a
   CapacitorCordova: 139e2ed3d91c54b5aeae7941135c9f9aefc6da1d
   CapacitorDevice: 12b136398a320a395ddc8d227ab532848058d796
-  CapacitorPushNotifications: 6ffcf5df95f17d71a1b02893549bc4727f80540c
+  CapacitorPushNotifications: c6158ba6f3777f281a675aa43e4011e9723e822b
   CodetrixStudioCapacitorGoogleAuth: fcce058390347c1ce5d8ac4764bdf1f5c1ee233b
   GoogleSignIn: 5651ce3a61e56ca864160e79b484cd9ed3f49b7a
   GTMAppAuth: 0ff230db599948a9ad7470ca667337803b3fc4dd

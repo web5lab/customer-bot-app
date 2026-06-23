@@ -10,11 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@capacitor/android": "^7.4.3",
-    "@capacitor/core": "^8.4.1",
+    "@capacitor/android": "^7.6.7",
+    "@capacitor/core": "^7.6.7",
     "@capacitor/device": "^7.0.5",
     "@capacitor/ios": "^7.6.7",
-    "@capacitor/push-notifications": "^7.0.2",
+    "@capacitor/push-notifications": "^7.0.6",
     "@codetrix-studio/capacitor-google-auth": "^3.4.0-rc.4",
     "@reduxjs/toolkit": "^2.8.2",
     "axios": "^1.11.0",
@@ -30,7 +30,7 @@
     "redux-persist": "^6.0.0"
   },
   "devDependencies": {
-    "@capacitor/cli": "^7.4.3",
+    "@capacitor/cli": "^7.6.7",
     "@eslint/js": "^9.15.0",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",

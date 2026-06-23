@@ -6,7 +6,6 @@ import { AuthProvider } from './contexts/AuthContext'
 import { ProtectedRoute } from './components/ProtectedRoute'
 import { BottomNavigation } from './components/BottomNavigation'
 import { NotificationHandler } from './components/NotificationHandler'
-import { GoogleAuth } from '@codetrix-studio/capacitor-google-auth';
 
 // Pages
 import { Bots } from './pages/Bots'

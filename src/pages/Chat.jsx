@@ -53,7 +53,7 @@ export function Chat() {
 
   const loadChatSessions = async () => {
     try {
-      const response =  dispatch(getChatSessions({ botId: activeBot._id }))
+      const response = await dispatch(getChatSessions({ botId: activeBot._id }))
       if (response.payload) {
         setChatSessions(response.payload)
       }

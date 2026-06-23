@@ -60,12 +60,12 @@ function AppLayout() {
             </ProtectedRoute>
           } />
           <Route path="/chat" element={
-            <ProtectedRoute>
+            <ProtectedRoute requiresBot>
               <Chat />
             </ProtectedRoute>
           } />
           <Route path="/training" element={
-            <ProtectedRoute>
+            <ProtectedRoute requiresBot>
               <Training />
             </ProtectedRoute>
           } />
